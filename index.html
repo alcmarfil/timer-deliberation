@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Timer UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="timer-container">
+        <!-- Navigation -->
+        <div class="navigation">
+            <button class="nav-btn" data-panel="L-Panel">L-Panel</button>
+            <button class="nav-btn" data-panel="P-Panel">P-Panel</button>
+            <button class="nav-btn active" data-panel="OM-Panel">OM-Panel</button>
+        </div>
+
+        <!-- Script Headers -->
+        <div class="script-timeline" id="scriptTimeline">
+            <!-- Injected by JS -->
+        </div>
+
+        <!-- Main Timer -->
+        <div class="main-timer-wrapper">
+            <div class="global-timer" id="globalTimer">10:00</div>
+            <div class="section-prompt" id="sectionPrompt">Waiting to start...</div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="playPauseBtn" class="control-btn primary" title="Play/Pause">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="stopBtn" class="control-btn secondary" title="Reset">
+                <i class="fas fa-stop"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
