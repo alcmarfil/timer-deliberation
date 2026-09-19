@@ -198,6 +198,14 @@ navBtns.forEach(btn => {
     });
 });
 
+// Spacebar Keybind for Play/Pause
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space') {
+        e.preventDefault(); // Prevent default page scrolling when pressing space
+        togglePlay();
+    }
+});
+
 const activeBtn = document.querySelector('.nav-btn.active');
 if (activeBtn) {
     currentPanel = activeBtn.getAttribute('data-panel');
